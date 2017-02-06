@@ -9,11 +9,8 @@ import gifAnimation.*;
  * 
  * You're The Man Now, Dog
  *
- * Original "Sequential" by James Paterson.
- * Extended by Ramzi Abdoch.
- * 
- *  
- *  
+ * Author: Ramzi Abdoch.
+ *
  */
 
 ArrayList<Gif> gifs;  // Tile of Gifs in fullscreen
@@ -35,15 +32,15 @@ void setup() {
   fullScreen();
   
   // Fill in gif data
-  gif = new Gif(this,"gif.gif");
-  allFrames = Gif.getPImages(this, "gif.gif");
+  gif = new Gif(this,"img/gif.gif");
+  allFrames = Gif.getPImages(this, "img/gif.gif");
   numFrames = allFrames.length;
   gif_width = allFrames[0].width;
   gif_height = allFrames[0].height;
   
   // Fill in audio data
   minim = new Minim(this);
-  groove = minim.loadFile("sad_violin.mp3", 2048);
+  groove = minim.loadFile("mp3/sad_violin.mp3", 2048);
   
   // Loop Gif
   gif.loop();
