@@ -28,7 +28,7 @@ AudioPlayer groove;
     
 void setup() { 
   
-  frameRate(24);
+  frameRate(36);
   fullScreen();
   
   // Fill in gif data
